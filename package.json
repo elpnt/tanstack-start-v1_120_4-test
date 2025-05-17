@@ -6,12 +6,13 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"start": "node .output/server/index.mjs"
+		"start": "node .output/server/index.mjs",
+		"fix": "biome check --write"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"packageManager": "pnpm@10.10.0",
+	"packageManager": "pnpm@10.11.0",
 	"dependencies": {
 		"@tailwindcss/vite": "^4.1.7",
 		"@tanstack/react-router": "1.120.4-alpha.19",
@@ -22,6 +23,7 @@
 		"vite": "^6.3.5"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
 		"@types/react": "^19.1.4",
 		"@types/react-dom": "^19.1.5",
 		"typescript": "^5.8.3",

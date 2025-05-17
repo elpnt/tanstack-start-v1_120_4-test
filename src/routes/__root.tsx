@@ -1,11 +1,11 @@
+import {
+	HeadContent,
+	Outlet,
+	Scripts,
+	createRootRoute,
+} from "@tanstack/react-router";
 // src/routes/__root.tsx
 import type { ReactNode } from "react";
-import {
-	Outlet,
-	createRootRoute,
-	HeadContent,
-	Scripts,
-} from "@tanstack/react-router";
 
 import css from "../app.css?url";
 
@@ -38,7 +38,7 @@ function RootComponent() {
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 	return (
-		<html>
+		<html lang="en">
 			<head>
 				<HeadContent />
 			</head>
